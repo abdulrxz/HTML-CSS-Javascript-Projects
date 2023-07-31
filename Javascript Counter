@@ -1,0 +1,15 @@
+const incbtn=document.querySelector('#increment')
+const decbtn=document.querySelector('#decrement')
+let counter=0
+function inccounter(){
+const counterel=document.getElementById('counter')
+counter++
+counterel.innerText=counter
+}
+function deccounter(){
+const counterel=document.getElementById('counter')
+counter--
+counterel.innerText=counter
+}
+incbtn.addEventListener('click',inccounter)
+decbtn.addEventListener('click',deccounter)
