@@ -1,15 +1,32 @@
 const incbtn=document.querySelector('#increment')
 const decbtn=document.querySelector('#decrement')
+const counterel =document.getElementById('counter')
+const ulelement=document.getElementById('listitems')
+
 let counter=0
 function inccounter(){
-const counterel=document.getElementById('counter')
 counter++
 counterel.innerText=counter
+
+const li=document.createElement('li')
+li.innerHTML='<b>Sentence</b>'+counter
+li.setAttribute('datacounter',counter)
+const number=parseInt(li.getAttribute('datacounter'),10)
+if(number%2===0){
+li.style.background='blue'
+li.style.padding='10px'}
+else{li.style.background='aqua'
+li.style.padding='10px'}
+ulelement.appendChild(li)
 }
 function deccounter(){
-const counterel=document.getElementById('counter')
+const li = ulelement.querySelector('[datacounter="'+counter+'"]')
+const number=parseInt(li.getAttribute('datacounter'),10)
+if(number%2===0){
+li.remove()}
 counter--
 counterel.innerText=counter
+
 }
 incbtn.addEventListener('click',inccounter)
 decbtn.addEventListener('click',deccounter)
