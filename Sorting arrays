@@ -1,0 +1,13 @@
+const places = ["Tokyo", "Paris", "Rome", "London", "New York"];
+console.log(places)
+// Sort the array in alphabetical order without modifying the actual list.
+const sortedPlaces = [...places].sort()
+console.log(sortedPlaces)
+// Show that the array is still in its original order by printing it.
+console.log(places)
+// Reverse the order of the array in alphabetical without changing the order of the original list..
+const revalplaces=[...sortedPlaces].reverse()
+console.log(revalplaces)
+// Reverse the order of the array without changing the order of the original list.
+const revplaces=[...places].reverse()
+console.log(revplaces)
