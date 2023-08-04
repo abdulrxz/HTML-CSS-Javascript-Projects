@@ -1,0 +1,7 @@
+const names = ["Bard", "Dolly", "Elmo", "Frank"];
+
+const message = "Hello, {name}! How are you today?";
+
+for (let i = 0; i < names.length; i++) {
+  console.log(message.replace("{name}", names[i]));
+}
