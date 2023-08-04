@@ -1,0 +1,14 @@
+const current_users = ['admin', 'eric', 'kate', 'john', 'mary'];
+const new_users = ['john', 'JOHNNY', 'mary', 'sarah', 'david'];
+
+for(const new_username of new_users){
+  const username_taken =current_users.some((current_username)=>{
+    return new_username.toLowerCase()===current_username.toLowerCase();
+
+  })
+  if (username_taken) {
+    console.log(`The username ${new_username} is already taken. Please enter a new username.`);
+  } else {
+    console.log(`The username ${new_username} is available.`);
+  }
+}
