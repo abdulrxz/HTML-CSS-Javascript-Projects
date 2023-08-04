@@ -1,0 +1,25 @@
+const names = ["Bard", "Dolly", "Elmo", "Frank"];
+const message="I would like to invite name to dinner."
+for(let i=0;i<names.length;i++){
+    console.log(message.replace("name",names[i]))
+}
+console.log(`I found a bigger dinner table, so I can invite more people!`);
+
+names.unshift("Alice")
+names.splice(names.length/2,0,"BOB")
+names.push("Carol")
+for(let i=0;i<names.length;i++){
+    console.log(message.replace("name",names[i]))
+}
+console.log("I'm really sorry but I can only invite two people to dinner.");
+
+while(names.length>2){
+    const name=names.pop()
+    console.log(`Sorry, ${name}, I can't invite you to dinner.`);
+}
+for(let i=0;i<names.length;i++){
+    console.log(`I'm still inviting ${names[i]} to dinner`)
+}
+while(names.length>0){
+    names.pop()
+}
