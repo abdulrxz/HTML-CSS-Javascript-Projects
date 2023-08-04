@@ -1,0 +1,11 @@
+// Store the person's name in a variable.
+const name = "Eric";
+
+// Print the name in lowercase.
+console.log(name.toLowerCase());
+
+// Print the name in uppercase.
+console.log(name.toUpperCase());
+
+// Print the name in titlecase.
+console.log(name.title());
