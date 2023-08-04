@@ -1,0 +1,7 @@
+const name = " \tAlbert Einstein\n ";
+
+console.log(name);
+
+const strippedName = name.trim();
+
+console.log(strippedName);
