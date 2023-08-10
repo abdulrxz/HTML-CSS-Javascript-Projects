@@ -1,0 +1,15 @@
+const options=[
+  {text:"Choose one",value:""},
+  {text:"Pakistan",value:"92"},
+  {text:"Turkey",value:"90"},
+  {text:"India",value:"91"},
+  {text:"USA",value:"1"},
+]
+const select=document.createElement("select");
+
+options.forEach(o=>{
+  let option = new Option(o.text,o.value)
+  select.appendChild(option)
+});
+
+document.body.appendChild(select)
