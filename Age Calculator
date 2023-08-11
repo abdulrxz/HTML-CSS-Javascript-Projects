@@ -1,0 +1,12 @@
+const fighters=[
+    {name:"Khabib",born:1988},
+    {name:"Alex",born:2005},
+    {name:"Ali",born:1969},
+    
+]
+const current = new Date().getFullYear();
+
+for (let fighter of fighters){
+    fighter.age=current-fighter.born
+}
+console.table(fighters);
